@@ -1,0 +1,14 @@
+Informações do alimento mais caro:
+Alimento [dataValidade=26/3/2009, toString()=Produto [preco=19.9, descricao=Sabor Queijo, nome=Fondue]]
+
+Informações do eletrodoméstico mais barato:
+Eletrodomestico [ipi=154.65, toString()=Produto [preco=360.1, descricao=220V, nome=Torradeira]]
+
+Nome e quantidade em estoque de todos os produtos de vestuário:
+Camiseta | Quantidade em estoque: 10
+Calca | Quantidade em estoque: 5
+Bermuda | Quantidade em estoque: 16
+Casaco | Quantidade em estoque: 8
+Moleton | Quantidade em estoque: 36
+Gravata | Quantidade em estoque: 78
+Camiseta | Quantidade em estoque: 4

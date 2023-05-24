@@ -1,0 +1,47 @@
+CREATE TABLE public."usuarios"
+(
+    id bigserial NOT NULL,
+    nome character varying NOT NULL,
+    email character varying NOT NULL,
+    cpf_cnpj character varying NOT NULL,
+    telefone character varying NOT NULL,
+    senha character varying NOT NULL,
+    PRIMARY KEY ("id")
+)
+
+
+CREATE TABLE public."enderecos"
+(
+    id bigserial NOT NULL,
+    id_usuario int NOT NULL,
+    logradouro character varying NOT NULL,
+    numero numeric NOT NULL,
+    municipio character varying NOT NULL,
+    uf character varying,
+    PRIMARY KEY (id),
+    CONSTRAINT "fk_id_usuario" FOREIGN KEY ("id_usuario")
+        REFERENCES public."usuarios" ("id") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+        NOT VALID
+)
+
+CREATE TABLE public."entidadessociais"
+(
+    id bigserial NOT NULL,
+    id_usuario int NOT NULL,
+    nome character varying NOT NULL,
+    objetivos character varying NOT NULL,
+    logradouro character varying NOT NULL,
+    numero numeric NOT NULL,
+    municipio character varying NOT NULL,
+    uf character varying,
+    email character varying NOT NULL,
+    telefone character varying NOT NULL,
+    PRIMARY KEY (id),
+    CONSTRAINT "fk_id_usuario" FOREIGN KEY ("id_usuario")
+        REFERENCES public."usuarios" ("id") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+        NOT VALID
+)

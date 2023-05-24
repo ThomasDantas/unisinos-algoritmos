@@ -1,0 +1,15 @@
+Chegamos ao nosso desafio do módulo 2!
+
+- As chaves devem ser todas inteiras
+
+- Você não precisa colocar os dados que os nós da árvore indexam, cada nó pode armazenar apenas a chave do nó,
+o fator de balanceamento e os ponteiros para as sub-árvores direita e esquerda
+
+- As entradas do programa devem ser realizadas via teclado. Por exemplo: “insert 10” pode ser uma forma de indicar a inserção 
+da chave 10 na árvore.
+
+- A saída do programa também pode ser realizada com impressões, desde que seja possível ver o estado da árvore ao final de cada operação. 
+Você pode utilizar o formato de impressão que preferir
+
+- A cada operação de rotação realizada, imprima na tela a operação realizada (rotação simples, dupla, a esquerda ou direita) e 
+o motivo (ou seja, qual chave estava desbalanceada)
